@@ -1,0 +1,45 @@
+CREATE DATABASE EDUCAI;
+USE EDUCAI;
+ 
+CREATE TABLE ORIENTADOR (
+nome_orient VARCHAR (50) NOT NULL,
+tel_orient VARCHAR (15) NOT NULL,
+end_orient VARCHAR (50) NOT NULL,
+cod_orient INT PRIMARY KEY NOT NULL, 
+sexo_orient CHAR (1) NOT NULL, 
+dat_nasc_orient DATE NOT NULL,
+posi_social_orient VARCHAR (50) NOT NULL
+)
+ 
+CREATE TABLE PROFESSOR (
+nome_prof VARCHAR (50) NOT NULL,
+end_prof VARCHAR (50) NOT NULL,
+tel_prof VARCHAR (15) NOT NULL,
+email_prof VARCHAR (50) NOT NULL, 
+sexo_prof CHAR (1) NOT NULL, 
+dat_nasc_prof DATE NOT NULL,
+posi_social_prof VARCHAR (50) NOT NULL,
+cod_prof INT PRIMARY KEY NOT NULL
+)
+
+CREATE TABLE ALUNO (  
+rm_aluno INT PRIMARY KEY NOT NULL,
+email_aluno VARCHAR (50) NOT NULL,
+nome_aluno VARCHAR (50) NOT NULL,
+end_aluno VARCHAR (50) NOT NULL, 
+sexo_aluno CHAR (1) NOT NULL,
+data_nasc_aluno DATE NOT NULL
+) 
+
+CREATE TABLE LAUDO (
+cod_laudo INT PRIMARY KEY NOT NULL,
+cod_cid VARCHAR (4) NOT NULL,
+nome_laudo VARCHAR (50) NOT NULL,
+obs_laudo VARCHAR (100) NOT NULL, 
+tipo_defic VARCHAR (50) NOT NULL, 
+data_laudo DATE NOT NULL,
+rm_aluno INT NOT NULL,
+cod_prof INT NOT NULL, 
+CONSTRAINT FK_ALUNO_LAUDO FOREIGN KEY (rm_aluno) REFERENCES  Aluno (rm_aluno), 
+CONSTRAINT FK_PROF_LAUDO FOREIGN KEY (cod_prof) REFERENCES PROFESSOR (cod_prof), 
+)

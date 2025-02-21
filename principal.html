@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="principal.css">
+
+	<title>Principal</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="principal.html" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">EDUCAI</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="Notificação.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Notificações</span>
+				</a>
+			</li>
+			<li>
+				<a href="professor.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Professores</span>
+				</a>
+			</li>
+			<li>
+				<a href="Laudo.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Laudo</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="login.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Sair</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Pesquisa</a>
+			<form action="INF2FM.html">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="orientador.html" class="profile">
+				<img src="orientadora.jpg"></img>
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Olá Mariana!</h1>
+                   
+                </div>
+            </div>
+ 
+            <div class="table-data">
+                <div class="order">
+                    <div class="head">
+                        <h3>Últimas pesquisas</h3>
+                        <i class='bx bx-search' ></i>
+                        <i class='bx bx-filter' ></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Usuário</th>
+                                <th>Identificação</th>
+								<th>Turma</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="peopleman.png">
+                                    <a class="perfil" href="#">Gabriel Silva Costa</a>
+                                </td>
+                                <td>rm93867</td>
+                                <td>EDF2CT</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="clarice.jpg" class="perfilclarice">
+                                    <a class="perfil" href="perfil.html">Clarice Souza</a>
+                                </td>
+                                <td>rm93758</td>
+                                <td>INF2FM</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="peoplemanII.png">
+                                    <a class="perfil" href="#">Lucas Pereira Santos</a>
+                                </td>
+                                <td>rm93961</td>
+                                <td>TEL1AT</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="peoplewomanIII.png">
+                                    <a class="perfil" href="#">Mateus Oliveira Lima</a>
+                                </td>
+                                <td>rm92876</td>
+                                <td>IRD3AM</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="peoplewomanII.png">
+                                    <a class="perfil" href="#">Juliana Pereira Rodrigues</a>
+                                </td>
+                                <td>rm93658</td>
+                                <td>EEL3DM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+ 
+	<!-- CONTENT -->
+	<div class="Documentos">
+		<div class="head">
+			<h3>Documentos</h3>
+			<i class='bx bx-plus' ></i>
+			<i class='bx bx-filter' ></i>
+		</div>
+		<ul class="todo-list">
+			<li class="completed">
+			   
+				<p>-Laudo Clarice Souza</p>
+			   
+			</li>
+			<li class="completed">
+				<p>-Lauda Juliana Pereira Rodrigues</p>
+		   
+			</li>
+			<li class="not-completed">
+				<p>-Laudo Lucas Pereira Santos</p>
+			   
+			</li>
+			<li class="completed">
+				<p>-Laudo Mateus Oliveira Lima </p>
+			   
+			</li>
+			<li class="not-completed">
+				<p>-Laudo Gabriel Silva Costa</p>
+			   
+			</li>
+		</ul>
+	</div>
+</div>
+</main>
+<!-- MAIN -->
+</section>
+<!-- CONTENT -->
+
+
+<script src="script.js"></script>
+</body>
+</html>	
